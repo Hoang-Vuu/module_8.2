@@ -8,18 +8,12 @@ public class task2 {
     public task2() {
         this.items = new HashMap<>();
     }
-
-    // Thêm sản phẩm vào giỏ
     public void addItem(String name, double price) {
         items.put(name, price);
     }
-
-    // Xóa sản phẩm khỏi giỏ
     public void removeItem(String name) {
         items.remove(name);
     }
-
-    // Lấy số lượng sản phẩm trong giỏ
     public int getItemCount() {
         return items.size();
     }

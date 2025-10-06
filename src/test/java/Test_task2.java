@@ -40,8 +40,7 @@ public class Test_task2{
         task2 cart = new task2();
 
         cart.addItem("Apple", 1.0);
-        cart.removeItem("Banana"); // không tồn tại
-
+        cart.removeItem("Banana");
         assertEquals(1, cart.getItemCount());
     }
 
