@@ -1,11 +1,11 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ShoppingCartTest {
+public class Test_task2{
 
     @Test
     public void testAddItem() {
-        ShoppingCart cart = new ShoppingCart();
+        task2 cart = new task2();
 
         cart.addItem("Apple", 1.0);
         cart.addItem("Banana", 0.5);
@@ -15,7 +15,7 @@ public class ShoppingCartTest {
 
     @Test
     public void testRemoveItem() {
-        ShoppingCart cart = new ShoppingCart();
+        task2 cart = new task2();
 
         cart.addItem("Apple", 1.0);
         cart.addItem("Banana", 0.5);
@@ -26,7 +26,7 @@ public class ShoppingCartTest {
 
     @Test
     public void testCalculateTotal() {
-        ShoppingCart cart = new ShoppingCart();
+        task2 cart = new task2();
 
         cart.addItem("Apple", 1.0);
         cart.addItem("Banana", 0.5);
@@ -37,7 +37,7 @@ public class ShoppingCartTest {
 
     @Test
     public void testRemoveItemThatDoesNotExist() {
-        ShoppingCart cart = new ShoppingCart();
+        task2 cart = new task2();
 
         cart.addItem("Apple", 1.0);
         cart.removeItem("Banana"); // không tồn tại
@@ -47,7 +47,7 @@ public class ShoppingCartTest {
 
     @Test
     public void testEmptyCartTotal() {
-        ShoppingCart cart = new ShoppingCart();
+        task2 cart = new task2();
         assertEquals(0.0, cart.calculateTotal(), 0.001);
     }
 }

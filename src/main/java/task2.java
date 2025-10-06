@@ -1,11 +1,11 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class ShoppingCart {
+public class task2 {
 
     private final Map<String, Double> items;
 
-    public ShoppingCart() {
+    public task2() {
         this.items = new HashMap<>();
     }
 

@@ -1,11 +1,11 @@
-    import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class PalindromeCheckerTest {
+public class Test_task1 {
 
     @Test
     public void testSimplePalindromes() {
-        PalindromeChecker checker = new PalindromeChecker();
+        task1 checker = new task1();
 
         assertTrue(checker.isPalindrome("radar"));
         assertTrue(checker.isPalindrome("level"));
@@ -14,7 +14,7 @@ public class PalindromeCheckerTest {
 
     @Test
     public void testComplexPalindromes() {
-        PalindromeChecker checker = new PalindromeChecker();
+        task1 checker = new task1();
 
         assertTrue(checker.isPalindrome("A man, a plan, a canal, Panama"));
         assertTrue(checker.isPalindrome("No 'x' in Nixon"));
@@ -23,7 +23,7 @@ public class PalindromeCheckerTest {
 
     @Test
     public void testNonPalindromes() {
-        PalindromeChecker checker = new PalindromeChecker();
+        task1 checker = new task1();
 
         assertFalse(checker.isPalindrome("hello"));
         assertFalse(checker.isPalindrome("openai"));
@@ -32,7 +32,7 @@ public class PalindromeCheckerTest {
 
     @Test
     public void testEdgeCases() {
-        PalindromeChecker checker = new PalindromeChecker();
+        task1 checker = new task1();
 
         assertTrue(checker.isPalindrome(""));
         assertTrue(checker.isPalindrome("   "));

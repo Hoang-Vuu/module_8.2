@@ -1,4 +1,4 @@
-public class PalindromeChecker {
+public class task1 {
 
     public boolean isPalindrome(String str) {
         if (str == null) return false;
