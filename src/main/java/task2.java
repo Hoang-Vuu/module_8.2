@@ -17,8 +17,6 @@ public class task2 {
     public int getItemCount() {
         return items.size();
     }
-
-    // Tính tổng giá trị sản phẩm trong giỏ
     public double calculateTotal() {
         double total = 0.0;
         for (double price : items.values()) {
